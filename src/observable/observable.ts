@@ -39,7 +39,7 @@ class WeatherData implements Subject {
 }
 
 class CurrentConditionsDisplay implements Observer, DisplayElement {
-  private temperature: number;
+  private temperature: number | undefined;
   private _weatherData: Subject;
 
   constructor(weatherData: Subject) {
